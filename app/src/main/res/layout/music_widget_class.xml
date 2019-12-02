@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="@dimen/widget_margin">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/woofer"/>
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="7dp"
+        android:layout_toRightOf="@id/imageview"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="11dp"
+            android:textColor="#5ad2f4"
+            android:textSize="18dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="11dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="11dp"
+            android:textSize="12dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingTop="12dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/play_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/pause_bnt"
+                android:layout_toRightOf="@+id/play_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pause"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/chose_btn"
+                android:layout_toRightOf="@id/pause_bnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "Select Song"
+                android:paddingBottom="2dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
